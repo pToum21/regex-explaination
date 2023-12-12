@@ -4,8 +4,9 @@ Introductory paragraph (replace this with your text)
 
 ## Summary
 
-This is the regular expression or regex to match an email 
+This is the regular expression, or regex to match an email:
 ^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
+This regular expression ensures that an email address adheres to the standard format of "username@domain.tld"
 
 
 ## Table of Contents
