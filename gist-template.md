@@ -87,11 +87,43 @@ This Bracket expression matches a single character that is either a digit (\d), 
 This Bracket expression matches a single character that is either a lowercase letter (a-z) or a dot (.).
 
 ### Character Classes
+Character classes are specific notation to denote matches of symbols in a certain group. [a-z] a-z A single character between a and z that is case sensitive. [0-9] 0-9 A single character between 0-9.
+```
+\d
+```
+This is a shorthand character class that matches any numerical digit (0-9), it is used in the second capturing group: ([\da-z\.-]+) to allow digits in the domain part.
 
 ### The OR Operator
+The OR operator in regex is defined by using the pipe symbol:
+```
+|
+```
+In this example for checking emails there is not a need for an or operator because it is made to match a specific pattern for email addresses.
 
 ### Flags
+Flags modify how the pattern matching is performed, they re often used to control case sensitivity, enable multi-line mode, and more.
 
+Examples of flags are as follows:
+```
+i
+```
+Case-insensitive:
+The i flag allows matching of both uppercase and lowercase letters in a case-insensitive manner.
+```
+g
+```
+Global:
+Finds all matches in the input string, not just the first one.
+```
+m
+```
+Multi-line:
+Allows the ^ and $ anchors to match the start/end of each line in a multi-line string.
+```
+u
+```
+Unicode:
+Enables full Unicode matching, including support for Unicode escape sequences.
 ### Character Escapes
 
 ## Author
