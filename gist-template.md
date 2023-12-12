@@ -124,8 +124,24 @@ u
 ```
 Unicode:
 Enables full Unicode matching, including support for Unicode escape sequences.
+
 ### Character Escapes
+Character escapes are used to represent characters with special meanings or to match characters that might be difficult to represent directly.
+
+```
+\.
+```
+Matches a '.'
+
+```
+\/
+```
+Matches a '/'
+```
+\-
+```
+This is a hyphen -. Similar to the dot, the backslash \ is used as an escape character to match a literal hyphen.
 
 ## Author
+This breakdown was written and created by Peyton Touma, an aspiring Full-Stack developer with a passion for understanding and explaining code related concepts.  Feel free to connect and explore more on Peyton's GitHub profile: [GitHub](https://github.com/pToum21)
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
