@@ -23,7 +23,11 @@ This regular expression ensures that an email address adheres to the standard fo
 ## Regex Components
 
 ### Anchors
+The anchors in a regular expression define the position within the input where a match must occur.
 
+The caret symbol (^) asserts the beginning of the string. It indicates that the pattern following it must start at the beginning of the input.
+The dollar sign ($) asserts the end of the string. It indicates that the pattern preceding it must end at the end of the input.
+Combining the two in this statement saays the email most fit the defined pattern and cannot be a larger string.
 ### Quantifiers
 
 ### Grouping Constructs
