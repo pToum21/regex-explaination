@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Regex BreakDown: Matching an Email
 
 Introductory paragraph (replace this with your text)
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This is the regular expression or regex to match an email 
+^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
+
 
 ## Table of Contents
 
