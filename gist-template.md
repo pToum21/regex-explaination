@@ -70,16 +70,24 @@ This captures the username part of the email address
  The grouping constructs ( ) are used to capture specific parts of the email address, allowing you to extract and work with the username, domain, and TLD separately.
 
 ### Bracket Expressions
-
-### Character Classes
+A Braket Expression in regular expressions is a set of characters enclosed within square brackets [ ]. It represents a single character that must match any one of the characters listed inside the brackets.
 ```
 [a-z0-9_\.-]
 ```
-This character class matches a single character that is either a lowercase letter (a-z), a digit (0-9), an underscore (_), a dot (.), or a hyphen (-).
+This Bracket expression matches a single character that is either a lowercase letter (a-z), a digit (0-9), an underscore (_), a dot (.), or a hyphen (-).
 
 ```
 [\da-z\.-]
 ```
+This Bracket expression matches a single character that is either a digit (\d), a lowercase letter (a-z), a dot (.), or a hyphen (-).
+
+```
+[a-z\.]
+```
+This Bracket expression matches a single character that is either a lowercase letter (a-z) or a dot (.).
+
+### Character Classes
+
 ### The OR Operator
 
 ### Flags
