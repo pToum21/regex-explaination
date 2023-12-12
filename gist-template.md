@@ -50,11 +50,36 @@ The Curly Braces Quantifier means between 2 and 6 occurrences of the characters 
 
 
 ### Grouping Constructs
+Grouping constructs are used to group characters together. They are grouped by using parentheses. Using grouping constructs allows the ability to treat one or more characters as a single unit.
+
+```
+^([a-z0-9_\.-]+)
+```
+This captures the username part of the email address
+
+```
+([\da-z\.-]+)
+```
+ This captures the domain part of the email address.
+
+ ```
+ ([a-z\.]{2,6})
+ ```
+ This captures the top-level domain (TLD) part of the email address. 
+
+ The grouping constructs ( ) are used to capture specific parts of the email address, allowing you to extract and work with the username, domain, and TLD separately.
 
 ### Bracket Expressions
 
 ### Character Classes
+```
+[a-z0-9_\.-]
+```
+This character class matches a single character that is either a lowercase letter (a-z), a digit (0-9), an underscore (_), a dot (.), or a hyphen (-).
 
+```
+[\da-z\.-]
+```
 ### The OR Operator
 
 ### Flags
